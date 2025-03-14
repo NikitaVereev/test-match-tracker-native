@@ -1,13 +1,12 @@
 import Svg, { Path } from 'react-native-svg'
 import { FC } from 'react'
 
-export const ArrowDropListDownIcon: FC = () => {
+export const ArrowDownIcon: FC<{ color?: string }> = ({ color }) => {
 	return (
-		<Svg width={28} height={29} fill="none">
+		<Svg width={20} height={20} fill="none">
 			<Path
-				fill="#fff"
-				stroke="#fff"
-				d="m14.572 16.092-.566.566-.566-.566-4.526-4.526a.387.387 0 0 0-.53.003.362.362 0 0 0 .004.51l5.355 5.355a.362.362 0 0 0 .514 0l5.355-5.355a.362.362 0 0 0 0-.513.362.362 0 0 0-.514 0l-4.526 4.526Z"
+				fill={color ? color : '#B4B5B6'}
+				d="M14.932 6.816H5.065c-.8 0-1.2.966-.633 1.533l4.317 4.317a1.775 1.775 0 0 0 2.508 0l1.642-1.642 2.675-2.675c.558-.567.158-1.533-.642-1.533Z"
 			/>
 		</Svg>
 	)

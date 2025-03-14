@@ -6,7 +6,7 @@ interface IIconProps {
 }
 
 export function Icons(props: IIconProps) {
-	const { name } = props
+	const { name, color } = props
 	const ChosenIcon = ICONS[name]
-	return <ChosenIcon />
+	return <ChosenIcon color={color} />
 }

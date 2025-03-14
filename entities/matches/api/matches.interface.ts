@@ -1,9 +1,9 @@
 export enum MatchStatus {
+	ALL = 'all',
 	Ongoing = 'Ongoing',
 	Finished = 'Finished',
 	Scheduled = 'Scheduled'
 }
-
 
 export interface IMatchPlayer {
 	kills: number
@@ -35,4 +35,9 @@ export interface IMatches {
 export interface IMatchesResponse {
 	data: IMatches
 	ok: boolean
+}
+
+export interface IMatchesWSSData {
+	type: string
+	data: IMatch[]
 }
